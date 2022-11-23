@@ -35,17 +35,24 @@ h2::after {
   margin-top: 20px;
   z-index: -1;
 }
-container {
+containerA {
     width: 20%;
     height: 20%;
 }
 h1 {
   font-size: 15px;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
 </style>
     
 <!-- Site Video -->
-<container><div id="container" style="position: relative; width: 1027px; height: 1114px; margin-right: auto; margin-left: auto; margin-top: 10px;">
+<div class="center"><div id="container" style="position: absolute; width: 1027px; height: 1114px; margin-right: 470px; margin-left: 300px; margin-top: 230px;">
 
 <div style="position: absolute; width: 480px; left: 0; top: 50px; -webkit-transform: rotate(-36deg); -ms-transform: rotate(-36deg); transform: rotate(-36deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/6wcXICwQMXc?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
 <div style="position: absolute; width: 480px; top: 50px; right: 0; -webkit-transform: rotate(36deg); -ms-transform: rotate(36deg); transform: rotate(36deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/nTRaX_AWtY4?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
@@ -54,11 +61,13 @@ h1 {
 <div style="position: absolute; width: 480px; left: 275px; bottom: -50px; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/dxUQauXuSfM?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
 <div style="position: absolute; width: 480px; left: -170px; bottom: 273px; -webkit-transform: rotate(-108deg); -ms-transform: rotate(-108deg); transform: rotate(-108deg);"><div style="width: 480px; height: 270px;"><iframe loading="lazy" src="https://www.youtube.com/embed/uGA7Lj65YyQ?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
 </div>
-</div><div style="position: absolute; width: -10px; right: 570px; bottom: 160px; top: 630px">
+</div>
+<div class="center"><div style="position: relative;
+top: 100px; left: -100px;">
 	<video autoplay="true" id="videoElement">
 	
 	</video>
-</div>
+</div></div>
 </container>
 <p><script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script><script>document.getElementById("container").animate([{transform:"rotate(0)"},{transform:"rotate(999deg)"}],{duration:9e4,iterations:1});var video=document.getElementById("webcam");navigator.mediaDevices.getUserMedia&&navigator.mediaDevices.getUserMedia({video:!0}).then(function(e){video.srcObject=e}).catch(function(e){console.log("Error.")})</script></p>
 
@@ -74,6 +83,7 @@ h1 {
 #videoElement {
 	width: 500px;
 	height: 375px;
+	border-radius: 50%
 	
 }
 
@@ -87,10 +97,25 @@ h1 {
   left: 50%;
   margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
 }
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
 </style>
 </head>
- 
+ <audio src="https://thkwong.github.io/modernsixrealms/music/instruction.mp3"></audio>
+<script>
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
+});
+</script>
 <body>
 
 <script>
@@ -108,5 +133,3 @@ if (navigator.mediaDevices.getUserMedia) {
 </script>
 </body>
 </html>
-<embed name="GoodEnough" src="https://thkwong.github.io/modernsixrealms/music/instruction.mp3" loop="false" hidden="false" autostart="true">
-
