@@ -1,0 +1,101 @@
+<div style="padding-left:30px">
+<h2 class="one">Modern Six Realms</h2>
+<title>Modern Six Realms - Interactive Art</title>
+<meta name="title" content="Modern Six Realms">
+<meta name="description" content="Modern Six Realms is a virtual meditation place for our viewers to explore Six Realms in a new way. Did you ever think about the representation of Six Realms in our modern world? This work i...Contact: charlie@link.cuhk.ed...">
+<meta name="keywords" content="Tak Hei KWONG, Charlie TH KWONG, Web art, New Media">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="60 days">
+<meta name="author" content="Charlie KWONG">
+
+<style>
+body {
+  background: gray;
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  background: gray;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+h2::after {
+  content: " ";
+  border-top: 1px solid white;
+  height: 1px;
+  left: 90px;
+  width: calc(100% - 30px);
+  position: absolute;
+  margin-top: 20px;
+  z-index: -1;
+}
+container {
+    width: 20%;
+    height: 20%;
+}
+h1 {
+  font-size: 15px;
+}
+</style>
+<div style="position: absolute; width: 500px; right: 0px; bottom: 700px">
+    <h1 class="one">Use headphones and maximize the browser for better experience.</h1>
+    </div>
+    
+<!-- Site Video -->
+<container><div id="container" style="position: relative; width: 1027px; height: 1114px; margin-right: auto; margin-left: auto; margin-top: 10px;">
+
+<div style="position: absolute; width: 480px; left: 0; top: 50px; -webkit-transform: rotate(-36deg); -ms-transform: rotate(-36deg); transform: rotate(-36deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/6wcXICwQMXc?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
+<div style="position: absolute; width: 480px; top: 50px; right: 0; -webkit-transform: rotate(36deg); -ms-transform: rotate(36deg); transform: rotate(36deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/nTRaX_AWtY4?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
+
+<div style="position: absolute; width: 480px; right: -170px; bottom: 273px; -webkit-transform: rotate(108deg); -ms-transform: rotate(108deg); transform: rotate(108deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/ssVkd2aXWOI?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
+<div style="position: absolute; width: 480px; left: 275px; bottom: -50px; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/dxUQauXuSfM?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
+<div style="position: absolute; width: 480px; left: -170px; bottom: 273px; -webkit-transform: rotate(-108deg); -ms-transform: rotate(-108deg); transform: rotate(-108deg);"><div style="width: 480px; height: 270px;"><iframe loading="lazy" src="https://www.youtube.com/embed/uGA7Lj65YyQ?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
+</div>
+</div>
+</container>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script><script>document.getElementById("container").animate([{transform:"rotate(0)"},{transform:"rotate(999deg)"}],{duration:9e4,iterations:1});var video=document.getElementById("webcam");navigator.mediaDevices.getUserMedia&&navigator.mediaDevices.getUserMedia({video:!0}).then(function(e){video.srcObject=e}).catch(function(e){console.log("Error.")})</script></p>
+
+<html>
+<head>
+<style>
+#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+    border-radius: 50%;
+}
+#videoElement {
+	width: 500px;
+	height: 375px;
+	
+}
+
+</style>
+</head>
+ 
+<body>
+<div style="position: absolute; width: 1680px; right: 0px; bottom: -160px"><div id="container">
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+</div></div>
+<script>
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+</script>
+</body>
+</html>
+<embed name="GoodEnough" src="/music/instruction.mp3" loop="false" hidden="true" autostart="true">
