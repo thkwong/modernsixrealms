@@ -1,135 +1,135 @@
-<div style="padding-left:30px">
-<h2 class="one">Modern Six Realms</h2>
-<title>Modern Six Realms - Interactive Art</title>
-<meta name="title" content="Modern Six Realms">
-<meta name="description" content="Modern Six Realms is a virtual meditation place for our viewers to explore Six Realms in a new way. Did you ever think about the representation of Six Realms in our modern world? This work i...Contact: charlie@link.cuhk.ed...">
-<meta name="keywords" content="Tak Hei KWONG, Charlie TH KWONG, Web art, New Media">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="revisit-after" content="60 days">
-<meta name="author" content="Charlie KWONG">
-<link rel="icon" type="image/x-icon" href="https://thkwong.github.io/modernsixrealms/fco.ico">
+<!DOCTYPE html>
+<html lang="en">
 
-
-<style>
-body {
-  background: gray;
-  color: white;
-  font-size: 50px;
-}
-
-h2 {
-  background: gray;
-  display: inline-block;
-  padding-right: 20px;
-}
-
-h2::after {
-  content: " ";
-  border-top: 1px solid white;
-  height: 1px;
-  left: 90px;
-  width: calc(100% - 30px);
-  position: absolute;
-  margin-top: 20px;
-  z-index: -1;
-}
-containerA {
-    width: 20%;
-    height: 20%;
-}
-h1 {
-  font-size: 15px;
-}
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 900px;
-}
-
-</style>
-    
-<!-- Site Video -->
-<div class="center"><div id="container" style="position: absolute; width: 1027px; height: 1114px; margin-right: 470px; margin-left: 300px; margin-top: 230px;">
-
-<div style="position: absolute; width: 480px; left: 0; top: 50px; -webkit-transform: rotate(-36deg); -ms-transform: rotate(-36deg); transform: rotate(-36deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/6wcXICwQMXc?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
-<div style="position: absolute; width: 480px; top: 50px; right: 0; -webkit-transform: rotate(36deg); -ms-transform: rotate(36deg); transform: rotate(36deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/nTRaX_AWtY4?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
-
-<div style="position: absolute; width: 480px; right: -170px; bottom: 273px; -webkit-transform: rotate(108deg); -ms-transform: rotate(108deg); transform: rotate(108deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/ssVkd2aXWOI?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
-<div style="position: absolute; width: 480px; left: 275px; bottom: -50px; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg);"><iframe loading="lazy" src="https://www.youtube.com/embed/dxUQauXuSfM?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
-<div style="position: absolute; width: 480px; left: -170px; bottom: 273px; -webkit-transform: rotate(-108deg); -ms-transform: rotate(-108deg); transform: rotate(-108deg);"><div style="width: 480px; height: 270px;"><iframe loading="lazy" src="https://www.youtube.com/embed/uGA7Lj65YyQ?loop=1&autoplay=1&mute=1&controls=0" width="450" height="240" frameborder="0"></iframe></div>
-</div>
-</div>
-<div class="center"><div style="position: relative;
-top: 100px; left: -100px;">
-	<video autoplay="true" id="videoElement">
-	
-	</video>
-</div></div>
-</container>
-<p><script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script><script>document.getElementById("container").animate([{transform:"rotate(0)"},{transform:"rotate(999deg)"}],{duration:9e4,iterations:1});var video=document.getElementById("webcam");navigator.mediaDevices.getUserMedia&&navigator.mediaDevices.getUserMedia({video:!0}).then(function(e){video.srcObject=e}).catch(function(e){console.log("Error.")})</script></p>
-
-<html>
 <head>
-<style>
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 375px;
-    border-radius: 50%;
-}
-#videoElement {
-	width: 500px;
-	height: 375px;
-	border-radius: 50%
-	
-}
+    <meta charset="UTF-8">
+    <title>Modern Six Realms - Interactive Art</title>
+    <meta name="title" content="Modern Six Realms">
+    <meta name="description" content="Modern Six Realms is a virtual meditation place for our viewers to explore Six Realms in a new way. Did you ever think about the representation of Six Realms in our modern world? This work is created to reflect that.">
+    <meta name="keywords" content="Tak Hei KWONG, Charlie TH KWONG, Web art, New Media">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="60 days">
+    <meta name="author" content="Charlie KWONG">
+    <link rel="icon" type="image/x-icon" href="https://thkwong.github.io/modernsixrealms/fco.ico">
 
-.child {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-</style>
+    <style>
+        /* General page styles */
+        body {
+            background: gray;
+            color: white;
+            font-size: calc(1rem + 1vw);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            background: gray;
+            display: inline-block;
+            padding-right: 1rem;
+            margin: 1rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            border-top: 1px solid white;
+            height: 1px;
+            width: calc(100% - 1rem);
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+        }
+
+        .center {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        .rotated-video {
+            transform-origin: center;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+
+        #container {
+            margin: 2rem auto;
+            border-radius: 50%;
+        }
+
+        #videoElement {
+            width: 100%;
+            border-radius: 50%;
+        }
+    </style>
 </head>
- <audio src="https://thkwong.github.io/modernsixrealms/music/instruction.mp3"></audio>
-<script>
-window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-});
-</script>
+
 <body>
+    <h2 class="one">Modern Six Realms</h2>
 
-<script>
-var video = document.querySelector("#videoElement");
+    <!-- Centered video section -->
+    <div class="center">
+        <div class="rotated-video" style="transform: rotate(-36deg);">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/6wcXICwQMXc?loop=1&autoplay=1&mute=1&controls=0"></iframe>
+        </div>
+        <div class="rotated-video" style="transform: rotate(36deg);">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/nTRaX_AWtY4?loop=1&autoplay=1&mute=1&controls=0"></iframe>
+        </div>
+        <div class="rotated-video" style="transform: rotate(108deg);">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/ssVkd2aXWOI?loop=1&autoplay=1&mute=1&controls=0"></iframe>
+        </div>
+        <div class="rotated-video" style="transform: rotate(-180deg);">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/dxUQauXuSfM?loop=1&autoplay=1&mute=1&controls=0"></iframe>
+        </div>
+        <div class="rotated-video" style="transform: rotate(-108deg);">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/uGA7Lj65YyQ?loop=1&autoplay=1&mute=1&controls=0"></iframe>
+        </div>
+    </div>
 
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function (stream) {
-      video.srcObject = stream;
-    })
-    .catch(function (err0r) {
-      console.log("Something went wrong!");
-    });
-}
-</script>
+    <!-- Webcam display -->
+    <div id="container">
+        <video autoplay="true" id="videoElement"></video>
+    </div>
+
+    <div class="footer">
+        <p>Modern Six Realms</p>
+    </div>
+
+    <audio src="https://thkwong.github.io/modernsixrealms/music/instruction.mp3" autoplay muted loop></audio>
+
+    <script>
+        var video = document.querySelector("#videoElement");
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function (err0r) {
+                    console.log("Something went wrong!");
+                });
+        }
+    </script>
 </body>
+
 </html>
